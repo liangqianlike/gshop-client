@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
-
-Vue.config.productionTip = false
+import router from './router'
 
 new Vue({
-  render: h => h(App),
+  // el: '#app',
+  // components: {
+  //   App
+  // },
+  // template: '<App/>'
+  render: h => h(App),  // 函数返回组件标签<App/>
+  router
 }).$mount('#app')
